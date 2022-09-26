@@ -10,7 +10,6 @@ const User = () => {
   });
 
   const handleEthConnect = () => {
-    console.log('process.env.PRIVATE_KEY', process.env.PRIVATE_KEY)
     if (process.env.PRIVATE_KEY) {
       dispach(login(process.env.PRIVATE_KEY));
     }
